@@ -1,5 +1,10 @@
-import { defineConfig } from "rasengan";
+import { defineConfig } from 'rasengan';
+import tailwindcss from '@tailwindcss/vite';
 
-export default defineConfig({
-  reactStrictMode: true,
+export default defineConfig(async () => {
+  return {
+    vite: {
+      plugins: [tailwindcss()],
+    },
+  };
 });

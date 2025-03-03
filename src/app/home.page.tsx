@@ -3,10 +3,12 @@ import { Features } from "@/components/features";
 import { HomeHero } from "@/components/home-hero";
 import {
   Card,
+  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "@rasenganjs/image";
 import { PageComponent } from "rasengan";
@@ -41,7 +43,7 @@ const Home: PageComponent = () => {
           </div>
           <Tabs
             defaultValue="yearly"
-            className="max-w-3xl w-full space-y-6 flex flex-col items-center"
+            className="max-w-2xl w-full space-y-6 flex flex-col items-center"
           >
             <TabsList className="self-center">
               <TabsTrigger value="yearly">Yearly</TabsTrigger>
@@ -61,6 +63,96 @@ const Home: PageComponent = () => {
                     </span>
                   </CardDescription>
                 </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="flex gap-2">
+                    <div>
+                      <Checkbox />
+                    </div>
+                    <div className="">
+                      <div className="text-primary font-medium">
+                        Inventory management and services
+                      </div>
+
+                      <div className="text-[10px]">
+                        Order management, Service creation, Real-time tracking
+                        of stock levels, Automatic replenishment alerts
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex gap-2">
+                    <div>
+                      <Checkbox />
+                    </div>
+                    <div className="">
+                      <div className="text-primary font-medium">
+                        Sales and service management
+                      </div>
+
+                      <div className="text-[10px]">
+                        Real-time sales tracking, Transaction history, Discount
+                        and promotion management, Automated invoicing
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex gap-2">
+                    <div>
+                      <Checkbox />
+                    </div>
+                    <div className="">
+                      <div className="text-primary font-medium">
+                        Customer management
+                      </div>
+
+                      <div className="text-[10px]">
+                        Customer database, Customer purchase history, Loyalty
+                        program, Marketing communication tools
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex gap-2">
+                    <div>
+                      <Checkbox />
+                    </div>
+                    <div className="">
+                      <div className="text-primary font-medium">Accounting</div>
+
+                      <div className="text-[10px]">
+                        Generation of financial reports, Monitoring of expenses
+                        and income, Management of VAT and taxes
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex gap-2">
+                    <div>
+                      <Checkbox />
+                    </div>
+                    <div className="">
+                      <div className="text-primary font-medium">
+                        Store management
+                      </div>
+
+                      <div className="text-[10px]">
+                        Performance monitoring by store, Employee and schedule
+                        management
+                      </div>
+                    </div>
+                  </div>
+                  <div className="text-muted">Coming soon</div>
+                  <div className="flex gap-2">
+                    <div>
+                      <Checkbox disabled />
+                    </div>
+                    <div className="">
+                      <div className="text-foreground font-medium">
+                        Multi-stores
+                      </div>
+
+                      <div className="text-[10px]">
+                        Centralized management of several points of sale
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
               </Card>
             </TabsContent>
             <TabsContent value="monthly">

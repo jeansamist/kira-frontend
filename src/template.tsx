@@ -1,12 +1,6 @@
-import { type TemplateProps } from "rasengan";
-import { ReactNode } from "react";
+import { type TemplateProps } from 'rasengan';
 
-export default function Template({
-  children,
-  Head,
-  Body,
-  Script,
-}: TemplateProps & { children: ReactNode }) {
+export default function Template({ Head, Body, Script }: TemplateProps) {
   return (
     <html lang="en">
       <Head>
@@ -16,8 +10,6 @@ export default function Template({
       </Head>
 
       <Body>
-        {children}
-
         <Script />
       </Body>
     </html>

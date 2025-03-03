@@ -17,7 +17,7 @@ const Checkbox = React.forwardRef<
     )}
     {...props}
   >
-    <div className="absolute z-10 top-0 left-0 w-full h-full bg-foreground flex items-center justify-center">
+    <div className="absolute z-10 top-0 left-0 w-full h-full bg-muted/30 flex items-center justify-center">
       <svg
         width="18"
         height="17"
@@ -35,7 +35,7 @@ const Checkbox = React.forwardRef<
 
     <CheckboxPrimitive.Indicator
       className={cn(
-        "absolute z-20 top-0 left-0 w-full h-full flex items-center justify-center bg-primary"
+        "absolute z-20 top-0 left-0 w-full h-full flex items-center justify-center bg-white"
       )}
     >
       <svg
