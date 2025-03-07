@@ -44,6 +44,9 @@ importers:
       '@rasenganjs/serve':
         specifier: 1.0.0-beta.54
         version: 1.0.0-beta.54(rasengan@1.0.0-beta.57(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.2)))
+      '@rasenganjs/vercel':
+        specifier: 1.0.0-beta.51
+        version: 1.0.0-beta.51(rasengan@1.0.0-beta.57(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.2)))
       '@tailwindcss/vite':
         specifier: ^4.0.9
         version: 4.0.11(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.2))
@@ -784,6 +787,11 @@ packages:
     hasBin: true
     peerDependencies:
       rasengan: ^1.0.0-beta.52
+
+  '@rasenganjs/vercel@1.0.0-beta.51':
+    resolution: {integrity: sha512-GhxM8Oz0RR3I65X6DRAcA0LojUPeT3DNHp7Fb2T9CWQmvuJM4UGAn/MCn9g/WoTvHxBTPRjpaBtKmjpdFUwYnQ==}
+    peerDependencies:
+      rasengan: 1.0.0-beta.51
 
   '@rollup/rollup-android-arm-eabi@4.34.9':
     resolution: {integrity: sha512-qZdlImWXur0CFakn2BJ2znJOdqYZKiedEPEVNTBrpfPjc/YuTGcaYZcdmNFTkUj3DU0ZM/AElcM8Ybww3xVLzA==}
@@ -2884,6 +2892,10 @@ snapshots:
       source-map-support: 0.5.21
     transitivePeerDependencies:
       - supports-color
+
+  '@rasenganjs/vercel@1.0.0-beta.51(rasengan@1.0.0-beta.57(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.2)))':
+    dependencies:
+      rasengan: 1.0.0-beta.57(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.2))
 
   '@rollup/rollup-android-arm-eabi@4.34.9':
     optional: true
