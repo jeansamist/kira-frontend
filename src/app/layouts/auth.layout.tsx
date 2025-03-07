@@ -8,7 +8,7 @@ export const AuthLayout: LayoutComponent = () => {
   useEffect(() => {
     async function isLogin() {
       const isLogin = await isLoginService();
-      if (isLogin) navigate("/");
+      // if (isLogin) navigate("/");
     }
     isLogin();
   }, []);
